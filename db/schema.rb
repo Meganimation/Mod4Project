@@ -21,8 +21,10 @@ ActiveRecord::Schema.define(version: 2019_09_27_164845) do
     t.bigint "max_supply"
     t.string "currency_symbol"
     t.string "slug"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_currencies_on_user_id"
   end
 
   create_table "games", force: :cascade do |t|
@@ -43,6 +45,13 @@ ActiveRecord::Schema.define(version: 2019_09_27_164845) do
     t.index ["game_id"], name: "index_stores_on_game_id"
   end
 
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "currencies", "users"
   add_foreign_key "stores", "currencies"
   add_foreign_key "stores", "games"
 end

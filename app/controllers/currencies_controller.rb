@@ -4,7 +4,7 @@ class CurrenciesController < ApplicationController
   
     def index 
         currencies = Currency.all
-        render json: currencies, except: [:created_at, :updated_at]
+        render json: currencies, except: [:created_at, :updated_at], include: :games, except: [:created_at, :updated_at]
     end
     
     

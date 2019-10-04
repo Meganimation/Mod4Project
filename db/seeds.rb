@@ -1346,15 +1346,20 @@ neopets = Game.create(name: 'Neopets', img_url: 'https://memegenerator.net/img/i
 runescape = Game.create(name: 'Runescape', img_url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/runescape-profile_image-ab71650c48f9753f-300x300.jpeg')
 
 
-   simolean = Currency.create(name: 'pokemon', max_supply: 96096842, currency_symbol: '-Sim', slug: 'ethereum' )
-   petty_gem = Currency.create(name: 'Soul Gem', max_supply: 21000000, currency_symbol: '-Petty', slug: 'bitcoin-cash')
-  pokecoin = Currency.create(name: 'Pokecoin', max_supply: 100000000000, currency_symbol: '-XRP', slug: 'ripple')
-    large_gem = Currency.create(name: 'Large Soul Gem', max_supply: 21000000, currency_symbol: ' -Yen', slug: 'bitcoin')
-   gold_coin =  Currency.create(name: 'Coin', max_supply: 96096842, currency_symbol: ' -Bronze', slug: 'ethereum')
-   silver_coin = Currency.create(name: 'Coin', max_supply: 21000000, currency_symbol: ' -Silver', slug: 'bitcoin-cash')
-   bronze_coin = Currency.create(name: 'Coin', max_supply: 100000000000, currency_symbol: ' -Gold', slug: 'ripple')
-   neopoint = Currency.create(name: 'Neopoints', max_supply: 18900000, currency_symbol: ' -NP', slug: 'dash')
-   amber = Currency.create(name: 'Amber', max_supply: 18900000, currency_symbol: ' -amber', slug: 'dash')
+testuser = User.create(name: 'Test User')
+
+
+
+   simolean = Currency.create(name: 'Simolean', max_supply: 96096842, currency_symbol: ' -The Sims', slug: 'ethereum' )
+   petty_gem = Currency.create(name: 'Soul Gem', max_supply: 21000000, currency_symbol: ' -Skyrim', slug: 'bitcoin-cash')
+  pokecoin = Currency.create(name: 'Pokecoin', max_supply: 100000000000, currency_symbol: ' -Pokemon', slug: 'ripple')
+    large_gem = Currency.create(name: 'Large Soul Gem', max_supply: 21000000, currency_symbol: ' -Skyrim', slug: 'bitcoin')
+   gold_coin =  Currency.create(name: 'Coin', max_supply: 96096842, currency_symbol: ' -Runescape', slug: 'ethereum')
+   silver_coin = Currency.create(name: 'Coin', max_supply: 21000000, currency_symbol: ' -Runescape', slug: 'bitcoin-cash')
+   bronze_coin = Currency.create(name: 'Coin', max_supply: 100000000000, currency_symbol: ' -Runescape', slug: 'ripple')
+   neopoint = Currency.create(name: 'Neopoints', max_supply: 18900000, currency_symbol: ' -Neopets', slug: 'dash')
+   amber = Currency.create(name: 'Amber', max_supply: 18900000, currency_symbol: ' -Pokemon', slug: 'dash')
+
 
 
 

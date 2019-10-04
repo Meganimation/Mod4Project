@@ -1,7 +1,8 @@
 class Currency < ApplicationRecord
 
-    has_many :stores
-    has_many :games, through: :stores
+    has_many :stores, dependent: :destroy
+    has_many :games, through: :stores, dependent: :destroy
+    belongs_to :user, optional: true, class_name: 'Currency', foreign_key: 'currency_id'
     
 
 def calculate_value(amount)

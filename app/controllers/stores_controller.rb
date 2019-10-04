@@ -3,7 +3,7 @@ class StoresController < ApplicationController
 
     def index 
         stores = Store.all
-        render json: stores, except: [:created_at, :updated_at]
+        render json: stores, except: [:created_at, :updated_at], include: :currency, except: [:created_at, :updated_at]
     end
     
     

@@ -6,6 +6,9 @@ class CreateCurrencies < ActiveRecord::Migration[5.2]
       t.bigint :max_supply
       t.string :currency_symbol
       t.string :slug
+      t.belongs_to :user, foreign_key: true
+   
+   
       
 
       t.timestamps
