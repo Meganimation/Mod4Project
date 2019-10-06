@@ -3,11 +3,71 @@ import React, { Component } from 'react'
 class PortfolioItem extends Component {
     constructor(props){
     super (props)
+
+    this.state = {
+
+      name: [],
+      amount: [],
+      portfolio: []
+     
+}
 }
 
+// handleClicko = () => {
 
-render() {
-    return (
+// const id = this.props.item.currency.id
+// //const amount = this.props.item.amount
+
+// fetch(`http://localhost:3000/currencies/${id}`, {
+// method: 'PATCH',
+// // body:  JSON.stringify({
+// //   name: [],
+// //   amount: this.props.item.amount
+// // })
+// })
+// .then(resp => resp.json())
+// .then(data => {
+//   debugger
+//   this.setState({ 
+//     name: data.name
+//   }
+//   )
+//   //add delete to the same place the state is?
+//   console.log(this.state.name)})}
+
+
+
+
+handleClicko = () => {
+
+  const id = this.props.item.currency.id
+  //const amount = this.props.item.amount
+  
+  fetch(`http://localhost:3000/currencies/${id}`, {
+  method: 'DELETE',
+  // body:  JSON.stringify({
+  //   name: [],
+  //   amount: this.props.item.amount
+  // })
+  })
+  .then(resp => resp.json)
+  .then(data => {
+    this.setState({ 
+      portfolio: []
+      //global array set state?
+    }
+    )
+    //add delete to the same place the state is?
+    console.log(this.state.name)})}
+
+
+render()
+
+
+ {
+
+   return (
+      
   <div> 
       <div className="row"> 
       <div className="col">
@@ -29,6 +89,7 @@ render() {
       <div className="header">Current Value:</div>
       <div className="text">${this.props.item.value}</div>
       </div>
+      {/* <button onClick={() => { this.handleClicko(this.props.item.currency.id) }}>Delete</button> */}
 
       </div>
       </div>   
