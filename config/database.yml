@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: crypto-calculator_production
-  username: crypto-calculator
-  password: <%= ENV['CRYPTO-CALCULATOR_DATABASE_PASSWORD'] %>
+  database: <%= ENV['DATABASE_URL'] %>
+  # username: crypto-calculator
+  # password: <%= ENV['CRYPTO-CALCULATOR_DATABASE_PASSWORD'] %>
