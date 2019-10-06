@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :games
  resources :currencies
 
-  root 'currencies#index'
+  # root 'currencies#index'
   post 'calculate', to: 'currencies#calculate'
   post 'search', to: 'currencies#search'
 
