@@ -1,5 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PortfolioContainer from './PortfolioContainer'
+import UserContainer from './UserContainer'
+import Sidebar from './Sidebar'
+
+
+
 // import axios from 'axios'
 
 
@@ -12,11 +17,44 @@ import PortfolioContainer from './PortfolioContainer'
 
 
 class App extends React.Component {
+
+    constructor() {
+        super()
+
+        this.state = {
+
+            user: []
+
+        }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 render() {
+
+
     return( 
-        <PortfolioContainer/>
-        
+
+<div>
+
+         <PortfolioContainer user={this.state.user}/>
+            <Sidebar/>
+
+        </div>
+
     )
 }}
 
-export default App 
+export default App;

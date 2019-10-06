@@ -8,15 +8,16 @@ class Search extends Component {
 
 
 render(){
-    const searchResults = this.props.searchResults.map( curr => <li key={curr.id} className="currency-list-item" data-id={curr.id} onClick={this.props.handleSelect}><a href="#" className="currency"><span>{curr.name}</span><span>{curr.currency_symbol}</span></a>  </li>)
+    const searchResults = this.props.searchResults.map( curr => <li key={curr.id} className="currency-list-item" data-id={curr.id} onClick={this.props.handleSelect}><a href="#hello" className="currency"><span>{curr.name}</span><span>{curr.currency_symbol}</span></a>  </li>)
 
     return(
-        <div>
-<h1>Cryptocurrency Portfolio Calculator</h1>
+        <div className="form-group">
+<h1 className="header-one">Videogame Currency Calculator</h1>
+< br/>
 <form> 
     <div className="form-group">
-        <label> Search for a Currency: </label> <br/>
-        <input onChange={this.props.handleChange} autoComplete='off' type='text' name='name' placeholder="Ex: Bitcoin, Litecoin, Ethereum..." value={this.props.name} className="field" />
+        <label> Search for a Video Game Currency: </label> <br/>
+        <input onChange={this.props.handleChange} autoComplete='off' type='text' name='name' placeholder="Eg. Simoleans, Pokecoins, etc." value={this.props.name} className="field" />
     </div>
     <div className="currency-list">{searchResults}</div>
 </form>
