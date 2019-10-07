@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :users
   resources :stores
   resources :games
- resources :currencies
+#  resources :currencies
 
   root 'currencies#index'
   post 'calculate', to: 'currencies#calculate'
