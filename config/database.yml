@@ -83,3 +83,5 @@ production:
   database: <%= ENV['DATABASE_URL'] %>
   # username: crypto-calculator
   # password: <%= ENV['CRYPTO-CALCULATOR_DATABASE_PASSWORD'] %>
+
+adapter: postgresql
