@@ -1344,22 +1344,38 @@ skyrim = Game.create(name: 'Skyrim', img_url: 'https://vignette.wikia.nocookie.n
 the_sims = Game.create(name: 'The Sims', img_url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/e9d0c95f-ebd2-4724-9788-51662e013ae9-profile_image-300x300.png')
 neopets = Game.create(name: 'Neopets', img_url: 'https://memegenerator.net/img/images/300x300/72829198.jpg')
 runescape = Game.create(name: 'Runescape', img_url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/runescape-profile_image-ab71650c48f9753f-300x300.jpeg')
-
+farcry = Game.create(name: 'Farcry', img_url: 'https://img.discogs.com/QEoRFgFD54TcndTTLhIaCJaesQU=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-8384545-1460570522-2505.jpeg.jpg')
+final_fantasy = Game.create(name: 'Final Fantasy', img_url: 'https://vistapointe.net/images/final-fantasy-wallpaper-1.jpg' )
+kid_acarus = Game.create(name: 'Kid Acarus', img_url: 'https://images-na.ssl-images-amazon.com/images/I/51V2BD2vGWL._SY355_.jpg' )
+super_mario = Game.create(name: 'Super Mario', img_url: 'https://learningworksforkids.com/wp-content/uploads/Super-Mario-Run-icon.png' )
+mega_man = Game.create(name: 'Mega Man', img_url: 'https://pcgamingwiki.ams3.digitaloceanspaces.com/thumb/9/9e/Mega_Man_X_Legacy_Collection_2_cover.jpg/300px-Mega_Man_X_Legacy_Collection_2_cover.jpg' )
+mortal_kombat = Game.create(name: 'Mortal Kombat', img_url: 'http://fullhdwall.com/wp-content/uploads/2017/07/Great-Mortal-Kombat-X.png' )
+fallout = Game.create(name: 'Fallout', img_url: 'http://buttonmashing.com/wp-content/uploads/fallout_4.jpg' )
+zelda = Game.create(name: 'Legend of Zelda', img_url: 'https://img.discogs.com/il0bm8thcgVsKUhTs4UDcIOmR1Y=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3906638-1482334616-9825.png.jpg' )
+animal_crossing = Game.create(name: 'Animal Crossing', img_url: 'https://wholesgame.com/wp-content/uploads/animal-crossing-300x300.jpg' )
 
 testuser = User.create(name: 'Test User')
 
 
-
-   simolean = Currency.create(name: 'Simolean', max_supply: 96096842, currency_symbol: ' -The Sims', slug: 'ethereum' )
-   petty_gem = Currency.create(name: 'Soul Gem', max_supply: 21000000, currency_symbol: ' -Skyrim', slug: 'bitcoin-cash')
+# Fry Cry 2 - Diamonds   | Final Fantasy VVII - GIL |  Kid Acaurs - Hearts | Super Mario 64 - Coins | Mega Man 9 - Bolts | Mortal Kombat : Deadly Alliance - Kombat Koins | Fallout 3 - Bottlecaps | Loz - Rupees | Animal Crossing - Bells
+diamond = Currency.create(name: 'Diamond', max_supply: 96096842, currency_symbol: ' -Farcry', slug: 'litecoin' )
+gil = Currency.create(name: 'GIL', max_supply: 96096842, currency_symbol: ' -Final Fantasy', slug: 'ZCoin' )
+hearts = Currency.create(name: 'Hearts', max_supply: 96096842, currency_symbol: ' -Kid Icarus', slug: 'peercoin' )
+mario_coins = Currency.create(name: 'Gold Coins', max_supply: 96096842, currency_symbol: ' -Super Mario', slug: 'ReddCoin' )
+bolts = Currency.create(name: 'Bolts', max_supply: 96096842, currency_symbol: ' -Mega Man', slug: 'hshare' )
+kombat_koins = Currency.create(name: 'Kombat Koins', max_supply: 96096842, currency_symbol: ' -Mortal Kombat', slug: 'waves' )
+bottlecaps = Currency.create(name: 'Bottlecaps', max_supply: 96096842, currency_symbol: ' -Fallout', slug: 'stratis' )
+rupees = Currency.create(name: 'Rupees', max_supply: 96096842, currency_symbol: ' -Legend of Zelda', slug: 'gxshares' )
+bells = Currency.create(name: 'Bells', max_supply: 96096842, currency_symbol: ' -Animal Crossing', slug: 'bytom' )
+   simolean = Currency.create(name: 'Simolean', max_supply: 96096842, currency_symbol: ' -The Sims', slug: 'ethos' )
+   petty_gem = Currency.create(name: 'Soul Gem', max_supply: 21000000, currency_symbol: ' -Skyrim', slug: 'blocknet')
   pokecoin = Currency.create(name: 'Pokecoin', max_supply: 100000000000, currency_symbol: ' -Pokemon', slug: 'ripple')
     large_gem = Currency.create(name: 'Large Soul Gem', max_supply: 21000000, currency_symbol: ' -Skyrim', slug: 'bitcoin')
-   gold_coin =  Currency.create(name: 'Coin', max_supply: 96096842, currency_symbol: ' -Runescape', slug: 'ethereum')
-   silver_coin = Currency.create(name: 'Coin', max_supply: 21000000, currency_symbol: ' -Runescape', slug: 'bitcoin-cash')
-   bronze_coin = Currency.create(name: 'Coin', max_supply: 100000000000, currency_symbol: ' -Runescape', slug: 'ripple')
+   gold_coin =  Currency.create(name: 'Gold Coin', max_supply: 96096842, currency_symbol: ' -Runescape', slug: 'ethereum')
+   silver_coin = Currency.create(name: 'Silver Coin', max_supply: 21000000, currency_symbol: ' -Runescape', slug: 'waves')
+   bronze_coin = Currency.create(name: 'Bronze Coin', max_supply: 100000000000, currency_symbol: ' -Runescape', slug: 'ripple')
    neopoint = Currency.create(name: 'Neopoints', max_supply: 18900000, currency_symbol: ' -Neopets', slug: 'dash')
    amber = Currency.create(name: 'Amber', max_supply: 18900000, currency_symbol: ' -Pokemon', slug: 'dash')
-
 
 
 
@@ -1375,6 +1391,16 @@ lumbridge = Store.create(game: runescape, currency: bronze_coin, name:'Lumbridge
 lavender_town = Store.create(game: pokemon, currency: pokecoin, name:'Lavender Town Store', location: 'Lavender Town')
 pewter_lab = Store.create(game: pokemon, currency: amber, name:'Pewter City Laboratory', location: 'Pewter City')
 
+
+farcry_store = Store.create(game: farcry, currency: diamond, name:'Whiterun Store', location: 'Whiterun')
+ff_store = Store.create(game: final_fantasy, currency: gil, name:'Whiterun Store', location: 'Whiterun')
+kid_acarus_store = Store.create(game: kid_acarus, currency: hearts, name:'Whiterun Store', location: 'Whiterun')
+mario_store = Store.create(game: super_mario, currency: mario_coins, name:'Whiterun Store', location: 'Whiterun')
+megaman_store = Store.create(game: mega_man, currency: bolts, name:'Whiterun Store', location: 'Whiterun')
+mk_store = Store.create(game: mortal_kombat, currency: kombat_koins, name:'Whiterun Store', location: 'Whiterun')
+fallout_store = Store.create(game: fallout, currency: bottlecaps, name:'Whiterun Store', location: 'Whiterun')
+zelda_store = Store.create(game: zelda, currency: rupees, name:'Whiterun Store', location: 'Whiterun')
+animalcrossing_store = Store.create(game: animal_crossing, currency: bells, name:'Whiterun Store', location: 'Whiterun')
 
 
 
